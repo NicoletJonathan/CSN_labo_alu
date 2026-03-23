@@ -13,7 +13,7 @@
 -- 
 --| Modifications |------------------------------------------------------------
 -- Version        Date       Auteur        Description
--- 1.0            22.03.26   RHI
+-- 1.0            23.03.26   RHI
 -------------------------------------------------------------------------------
 
 library ieee;
@@ -127,7 +127,7 @@ begin
   
   dep_sgn_o <= ovr_s;
   
-  dep_nsgn_o <= cout_s;
+  dep_nsgn_o <= cout_s xor op2_s;
   
   x2_1bit_s <= op0_s and not(op1_s) and op2_s;
   
