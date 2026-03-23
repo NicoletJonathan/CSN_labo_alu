@@ -111,15 +111,15 @@ begin
   
   with op2_s select
    mux_inter_s <= na_i	     		when '0',
-						res_xor1_s 		when '1',
-						(others =>'0') when others;
+				  res_xor1_s 		when '1',
+				  (others =>'0')    when others;
   
  with opcode_i(1 downto 0) select
-  val2_s <= res_xor1_s      					  								 	when "00",
-				mux_inter_s											  			   	when "01",
+  val2_s <= res_xor1_s      					  					when "00",
+			mux_inter_s											  	when "01",
             ((na_i xor op2_Nbits_s) and res_xor1_s) xor op2_Nbits_s	when "10",
-				std_logic_vector(to_unsigned(1, N)) xor op2_Nbits_s    	when "11",
-				(others =>'0')															when others;
+			std_logic_vector(to_unsigned(1, N)) xor op2_Nbits_s    	when "11",
+			(others =>'0')											when others;
   
   -- connection à l'additionneur
   
