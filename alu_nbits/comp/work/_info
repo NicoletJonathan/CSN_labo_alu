@@ -20,20 +20,21 @@ n@_opt
 Z2 OL;O;2020.1_1;71
 R0
 T_opt1
-!s110 1774224647
-V[5T2a2nhX;oLgQjfJ>KAW1
+!s110 1774225789
+V?:UT6iH9MPEdDZ2zS7K6S0
 04 10 10 work alu_top_tb test_bench 1
-=1-000ae431a4f1-69c08506-e3bcb-14191
+=1-000ae431a4f1-69c0897d-6b9bf-185ba
 o-quiet -auto_acc_if_foreign -work work -G VAL_N=6 +acc
 R1
 n@_opt1
 R2
+R0
 Eaddn
 Z3 w1774223032
 Z4 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z6 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 29
+!i122 36
 R0
 Z7 8/home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd
 Z8 F/home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd
@@ -43,9 +44,9 @@ VB76@;6bO9_8Dd5QBTRJaP2
 !s100 JIgQlMK4jOkY][zWJ7ONX0
 Z10 OL;C;2020.1_1;71
 32
-Z11 !s110 1774224634
+Z11 !s110 1774225776
 !i10b 1
-Z12 !s108 1774224634.000000
+Z12 !s108 1774225776.000000
 Z13 !s90 -reportprogress|300|-work|work|/home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd|
 Z14 !s107 /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd|
 !i113 0
@@ -56,7 +57,7 @@ R4
 R5
 R6
 Z17 DEx4 work 4 addn 0 22 B76@;6bO9_8Dd5QBTRJaP2
-!i122 29
+!i122 36
 l41
 L34 24
 VKi];J><X@8@_jJm1F4UO72
@@ -76,7 +77,7 @@ Z18 w1774223022
 R4
 R5
 R6
-!i122 27
+!i122 37
 R0
 Z19 8/home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd
 Z20 F/home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd
@@ -86,9 +87,9 @@ V2>H;^kFP?>MSGkn_:?OAO2
 !s100 _0B>@;iN7cUX@Z3L8<lbU0
 R10
 32
-Z21 !s110 1774224627
+Z21 !s110 1774225777
 !i10b 1
-Z22 !s108 1774224627.000000
+Z22 !s108 1774225777.000000
 Z23 !s90 -reportprogress|300|-work|work|/home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd|
 Z24 !s107 /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd|
 !i113 0
@@ -100,7 +101,7 @@ R4
 R5
 R6
 Z25 DEx4 work 9 addn_full 0 22 2>H;^kFP?>MSGkn_:?OAO2
-!i122 27
+!i122 37
 l50
 L36 50
 Vz>F;Lj?8H`SK^Qh5T<lG?2
@@ -116,11 +117,11 @@ R24
 R15
 R16
 Ealu_nbits_top
-Z26 w1774224594
+Z26 w1774225749
 R4
 R5
 R6
-!i122 30
+!i122 48
 R0
 Z27 8../src/alu_nbits_top.vhd
 Z28 F../src/alu_nbits_top.vhd
@@ -130,9 +131,9 @@ VK;QSoQdK^TNanY_<B>?Uh2
 !s100 YP8zDo=FQCYQM0N^B^;JV0
 R10
 32
-Z29 !s110 1774224646
+Z29 !s110 1774226004
 !i10b 1
-Z30 !s108 1774224646.000000
+Z30 !s108 1774226004.000000
 Z31 !s90 -reportprogress|300|-work|work|../src/alu_nbits_top.vhd|
 Z32 !s107 ../src/alu_nbits_top.vhd|
 !i113 0
@@ -144,11 +145,11 @@ R4
 R5
 R6
 Z33 DEx4 work 13 alu_nbits_top 0 22 K;QSoQdK^TNanY_<B>?Uh2
-!i122 30
+!i122 48
 l76
 L37 109
-VbWe>zD_UY8dJjLdX?O;3W3
-!s100 @JCdNeb7f>PLodzKe=Ob^2
+VVBW]O?D]jcL==:hY50?;n1
+!s100 1]R23834e[UG:^FG3S7MZ2
 R10
 32
 R29
@@ -168,7 +169,7 @@ Z38 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 R4
 R5
 R6
-!i122 34
+!i122 52
 R0
 Z39 8../src_tb/alu_top_tb.vhd
 Z40 F../src_tb/alu_top_tb.vhd
@@ -196,7 +197,7 @@ R4
 R5
 R6
 DEx4 work 10 alu_top_tb 0 22 kZMEGf6^YL[2X8TG=mhR@1
-!i122 34
+!i122 52
 l182
 L49 430
 V@DSlD6CnRnAZP`QLzA4Q^1
@@ -217,7 +218,7 @@ R36
 R4
 R5
 R6
-!i122 33
+!i122 51
 R34
 R0
 Z44 8../src_tb/common_pkg.vhd
@@ -244,7 +245,7 @@ R36
 R4
 R5
 R6
-!i122 33
+!i122 51
 l0
 L93 1
 Ve3FnnDi=b8Ul1GaaQd]L`2
@@ -263,7 +264,7 @@ Econsole_sim
 R34
 R5
 R6
-!i122 35
+!i122 53
 R0
 Z49 8../src_tb/console_sim.vhd
 Z50 F../src_tb/console_sim.vhd
@@ -273,11 +274,11 @@ V]Wc=>6LQ_BBJ<bc?Y2h^J0
 !s100 DG;ZDMdEbgPaW:h_FoikY3
 R10
 33
-R29
+Z51 !s110 1774226005
 !i10b 1
 R30
-Z51 !s90 -2008|-reportprogress|300|-work|work|../src_tb/console_sim.vhd|
-Z52 !s107 ../src_tb/console_sim.vhd|
+Z52 !s90 -2008|-reportprogress|300|-work|work|../src_tb/console_sim.vhd|
+!s107 ../src_tb/console_sim.vhd|
 !i113 0
 R43
 R16
@@ -287,18 +288,18 @@ R33
 R5
 R6
 DEx4 work 11 console_sim 0 22 ]Wc=>6LQ_BBJ<bc?Y2h^J0
-!i122 35
+!i122 53
 l104
-L82 54
+Z53 L82 54
 VFUMlCJ>dAnjNmfzl`9fl73
-!s100 ^j?d3kWgaBDmb?VPNAH9^0
+Z54 !s100 ^j?d3kWgaBDmb?VPNAH9^0
 R10
 33
-R29
+R51
 !i10b 1
 R30
-R51
 R52
+Z55 !s107 ../src_tb/console_sim.vhd|
 !i113 0
 R43
 R16
@@ -306,11 +307,11 @@ Plogger_pkg
 R4
 R5
 R6
-!i122 31
+!i122 49
 R34
 R0
-Z53 8../src_tb/logger_pkg.vhd
-Z54 F../src_tb/logger_pkg.vhd
+Z56 8../src_tb/logger_pkg.vhd
+Z57 F../src_tb/logger_pkg.vhd
 l0
 R46
 VXNfQMAnKi25UhMG@Bcj`91
@@ -321,8 +322,8 @@ b1
 R29
 !i10b 1
 R30
-Z55 !s90 -2008|-reportprogress|300|-work|work|../src_tb/logger_pkg.vhd|
-Z56 !s107 ../src_tb/logger_pkg.vhd|
+Z58 !s90 -2008|-reportprogress|300|-work|work|../src_tb/logger_pkg.vhd|
+Z59 !s107 ../src_tb/logger_pkg.vhd|
 !i113 0
 R43
 R16
@@ -331,7 +332,7 @@ R35
 R4
 R5
 R6
-!i122 31
+!i122 49
 l0
 L65 1
 VDifRNj=BZ2Bn_a24aB@zN1
@@ -341,8 +342,8 @@ R10
 R29
 !i10b 1
 R30
-R55
-R56
+R58
+R59
 !i113 0
 R43
 R16
@@ -351,7 +352,7 @@ R4
 R5
 R6
 R35
-!i122 32
+!i122 50
 R34
 R0
 8../src_tb/project_logger_pkg.vhd

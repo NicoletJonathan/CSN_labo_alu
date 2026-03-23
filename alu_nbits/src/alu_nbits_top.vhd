@@ -127,7 +127,7 @@ begin
   
   dep_sgn_o <= ovr_s;
   
-  dep_nsgn_o <= cout_s xor op2_s;
+  dep_nsgn_o <= cout_s xor (op2_s and (op1_s xnor op0_s));
   
   x2_1bit_s <= op0_s and not(op1_s) and op2_s;
   
