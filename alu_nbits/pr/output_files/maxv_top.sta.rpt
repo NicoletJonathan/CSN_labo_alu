@@ -1,0 +1,300 @@
+Timing Analyzer report for maxv_top
+Wed Mar 25 09:23:32 2026
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Fmax Summary
+  7. Setup Summary
+  8. Hold Summary
+  9. Recovery Summary
+ 10. Removal Summary
+ 11. Minimum Pulse Width Summary
+ 12. Clock Transfers
+ 13. Report TCCS
+ 14. Report RSKM
+ 15. Unconstrained Paths Summary
+ 16. Unconstrained Input Ports
+ 17. Unconstrained Output Ports
+ 18. Unconstrained Input Ports
+ 19. Unconstrained Output Ports
+ 20. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                         ;
++-----------------------+---------------------------------------------------------+
+; Quartus Prime Version ; Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                  ;
+; Revision Name         ; maxv_top                                                ;
+; Device Family         ; MAX V                                                   ;
+; Device Name           ; 5M570ZF256C5                                            ;
+; Timing Models         ; Final                                                   ;
+; Delay Model           ; Slow Model                                              ;
+; Rise/Fall Delays      ; Unavailable                                             ;
++-----------------------+---------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------+
+; SDC File List                                              ;
++------------------------+--------+--------------------------+
+; SDC File Path          ; Status ; Read at                  ;
++------------------------+--------+--------------------------+
+; ../src_pr/maxv_top.sdc ; OK     ; Wed Mar 25 09:23:32 2026 ;
++------------------------+--------+--------------------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 11    ; 11   ;
+; Unconstrained Input Port Paths  ; 65    ; 65   ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 65    ; 65   ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                          ;
++-------------+--------------------------------------------------------------------------------------+
+; Input Port  ; Comment                                                                              ;
++-------------+--------------------------------------------------------------------------------------+
+; na_i[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; na_i[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; na_i[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; na_i[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode_i[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode_i[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode_i[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; dep_nsgn_o  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dep_sgn_o   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; z_o         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                          ;
++-------------+--------------------------------------------------------------------------------------+
+; Input Port  ; Comment                                                                              ;
++-------------+--------------------------------------------------------------------------------------+
+; na_i[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; na_i[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; na_i[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; na_i[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[0]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[1]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[2]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; nb_i[3]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode_i[0] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode_i[1] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode_i[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; dep_nsgn_o  ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dep_sgn_o   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; result_o[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; z_o         ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+    Info: Processing started: Wed Mar 25 09:22:20 2026
+Info: Command: quartus_sta maxv_top -c maxv_top
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332104): Reading SDC File: '../src_pr/maxv_top.sdc'
+Warning (332174): Ignored filter at maxv_top.sdc(9): Clk_Main_i could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 9
+Warning (332049): Ignored create_clock at maxv_top.sdc(9): Argument <targets> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 9
+    Info (332050): create_clock -name {main_clk} -period 1000 [get_ports Clk_Main_i] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 9
+Warning (332174): Ignored filter at maxv_top.sdc(11): Con_25p_io[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 11
+Warning (332049): Ignored set_false_path at maxv_top.sdc(11): Argument <from> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 11
+    Info (332050): set_false_path -from [get_ports {Con_25p_io[*]}] -to [get_cells -compatibility_mode *] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 11
+Warning (332174): Ignored filter at maxv_top.sdc(12): Con_80p_io[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 12
+Warning (332049): Ignored set_false_path at maxv_top.sdc(12): Argument <from> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 12
+    Info (332050): set_false_path -from [get_ports {Con_80p_io[*]}] -to [get_cells -compatibility_mode *] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 12
+Warning (332174): Ignored filter at maxv_top.sdc(16): nButton_i[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 16
+Warning (332049): Ignored set_false_path at maxv_top.sdc(16): Argument <from> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 16
+    Info (332050): set_false_path -from [get_ports {nButton_i[*]}] -to [get_cells -compatibility_mode *] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 16
+Warning (332174): Ignored filter at maxv_top.sdc(17): nReset_i could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 17
+Warning (332049): Ignored set_false_path at maxv_top.sdc(17): Argument <from> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 17
+    Info (332050): set_false_path -from [get_ports {nReset_i}] -to [get_cells -compatibility_mode *] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 17
+Warning (332174): Ignored filter at maxv_top.sdc(18): Switch_i[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 18
+Warning (332049): Ignored set_false_path at maxv_top.sdc(18): Argument <from> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 18
+    Info (332050): set_false_path -from [get_ports {Switch_i[*]}] -to [get_cells -compatibility_mode *] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 18
+Warning (332049): Ignored set_false_path at maxv_top.sdc(20): Argument <to> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 20
+    Info (332050): set_false_path -from [get_cells -compatibility_mode *] -to [get_ports {Con_25p_io[*]}] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 20
+Warning (332049): Ignored set_false_path at maxv_top.sdc(21): Argument <to> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 21
+    Info (332050): set_false_path -from [get_cells -compatibility_mode *] -to [get_ports {Con_80p_io[*]}] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 21
+Warning (332174): Ignored filter at maxv_top.sdc(22): nLed_o[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 22
+Warning (332049): Ignored set_false_path at maxv_top.sdc(22): Argument <to> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 22
+    Info (332050): set_false_path -from [get_cells -compatibility_mode *] -to [get_ports {nLed_o[*]}] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 22
+Warning (332174): Ignored filter at maxv_top.sdc(23): Led_RGB_o[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 23
+Warning (332049): Ignored set_false_path at maxv_top.sdc(23): Argument <to> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 23
+    Info (332050): set_false_path -from [get_cells -compatibility_mode *] -to [get_ports {Led_RGB_o[*]}] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 23
+Warning (332174): Ignored filter at maxv_top.sdc(24): nSeven_Seg_o[*] could not be matched with a port File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 24
+Warning (332049): Ignored set_false_path at maxv_top.sdc(24): Argument <to> is an empty collection File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 24
+    Info (332050): set_false_path -from [get_cells -compatibility_mode *] -to [get_ports {nSeven_Seg_o[*]}] File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_pr/maxv_top.sdc Line: 24
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info (332140): No fmax paths to report
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 705 megabytes
+    Info: Processing ended: Wed Mar 25 09:23:32 2026
+    Info: Elapsed time: 00:01:12
+    Info: Total CPU time (on all processors): 00:00:01
+
+

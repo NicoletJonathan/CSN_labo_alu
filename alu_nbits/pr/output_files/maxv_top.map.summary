@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Wed Mar 25 09:20:36 2026
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : maxv_top
+Top-level Entity Name : alu_nbits_top
+Family : MAX V
+Total logic elements : 28
+Total pins : 18
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

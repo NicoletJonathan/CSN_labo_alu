@@ -24,6 +24,8 @@ vmap work work
 
 # alu_n files compilation
 # TO COMPLETE: add your adder files
+vcom -reportprogress 300 -work work   ../src/addn.vhd
+vcom -reportprogress 300 -work work   ../src/addn_full.vhd
 vcom -reportprogress 300 -work work   ../src/alu_nbits_top.vhd
 
 

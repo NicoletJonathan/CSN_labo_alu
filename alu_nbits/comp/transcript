@@ -1,0 +1,398 @@
+# //  Questa Sim-64
+# //  Version 2020.1_1 linux_x86_64 Mar  4 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:30:18 on Mar 23,2026
+# vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addn
+# -- Compiling architecture flot_don of addn
+# End time: 16:30:19 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:30:19 on Mar 23,2026
+# vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addn_full
+# -- Compiling architecture struct of addn_full
+# -- Loading entity addn
+# End time: 16:30:19 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/alu_nbits_top.vhd
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:30:20 on Mar 23,2026
+# vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/alu_nbits_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu_nbits_top
+# -- Compiling architecture struct of alu_nbits_top
+# -- Loading entity addn_full
+# End time: 16:30:20 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:30:37 on Mar 23,2026
+# vcom -reportprogress 300 -work work /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Compiling package common_pkg
+# ** Error: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd(38): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of record type cannot be unconstrained array type.
+# ** Error: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd(39): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of record type cannot be unconstrained array type.
+# ** Error: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd(40): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of record type cannot be unconstrained array type.
+# ** Error: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd(44): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of record type cannot be unconstrained array type.
+# ** Note: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_tb/common_pkg.vhd(89): VHDL Compiler exiting
+# End time: 16:30:37 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+do ../comp_alu.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 2020.1_1 Lib Mapping Utility 2020.03 Mar  4 2020
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:32:55 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/alu_nbits_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu_nbits_top
+# -- Compiling architecture struct of alu_nbits_top
+# -- Loading entity addn_full
+# End time: 16:32:56 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:32:56 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/logger_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package logger_pkg
+# -- Compiling package body logger_pkg
+# -- Loading package logger_pkg
+# End time: 16:32:56 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:32:56 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/project_logger_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Compiling package project_logger_pkg
+# End time: 16:32:56 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:32:56 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/common_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Compiling package common_pkg
+# -- Compiling package body common_pkg
+# -- Loading package common_pkg
+# End time: 16:32:56 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:32:56 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/alu_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Loading package common_pkg
+# -- Compiling entity alu_top_tb
+# -- Compiling architecture test_bench of alu_top_tb
+# -- Loading entity alu_nbits_top
+# End time: 16:32:56 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:32:57 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/console_sim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity console_sim
+# -- Compiling architecture struct of console_sim
+# -- Loading package NUMERIC_STD
+# -- Loading entity alu_nbits_top
+# End time: 16:32:57 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do ../comp_alu.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 2020.1_1 Lib Mapping Utility 2020.03 Mar  4 2020
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:31 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/addn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addn
+# -- Compiling architecture flot_don of addn
+# End time: 16:35:31 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:31 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/addn_full.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addn_full
+# -- Compiling architecture struct of addn_full
+# -- Loading entity addn
+# End time: 16:35:32 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:32 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/alu_nbits_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu_nbits_top
+# -- Compiling architecture struct of alu_nbits_top
+# -- Loading entity addn_full
+# End time: 16:35:32 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:32 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/logger_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package logger_pkg
+# -- Compiling package body logger_pkg
+# -- Loading package logger_pkg
+# End time: 16:35:32 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:32 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/project_logger_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Compiling package project_logger_pkg
+# End time: 16:35:32 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:32 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/common_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Compiling package common_pkg
+# -- Compiling package body common_pkg
+# -- Loading package common_pkg
+# End time: 16:35:32 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:32 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/alu_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Loading package common_pkg
+# -- Compiling entity alu_top_tb
+# -- Compiling architecture test_bench of alu_top_tb
+# -- Loading entity alu_nbits_top
+# End time: 16:35:32 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:32 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/console_sim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity console_sim
+# -- Compiling architecture struct of console_sim
+# -- Loading package NUMERIC_STD
+# -- Loading entity alu_nbits_top
+# End time: 16:35:33 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+do ../run_alu_top_tb.tcl
+# ** Warning: (vlib-34) Library already exists at "work".
+# QuestaSim-64 vmap 2020.1_1 Lib Mapping Utility 2020.03 Mar  4 2020
+# vmap work work 
+# Modifying modelsim.ini
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:44 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/addn.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addn
+# -- Compiling architecture flot_don of addn
+# End time: 16:35:45 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:45 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/addn_full.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity addn_full
+# -- Compiling architecture struct of addn_full
+# -- Loading entity addn
+# End time: 16:35:45 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:45 on Mar 23,2026
+# vcom -reportprogress 300 -work work ../src/alu_nbits_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu_nbits_top
+# -- Compiling architecture struct of alu_nbits_top
+# -- Loading entity addn_full
+# End time: 16:35:45 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:45 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/logger_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package logger_pkg
+# -- Compiling package body logger_pkg
+# -- Loading package logger_pkg
+# End time: 16:35:45 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:45 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/project_logger_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Compiling package project_logger_pkg
+# End time: 16:35:46 on Mar 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:46 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/common_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Compiling package common_pkg
+# -- Compiling package body common_pkg
+# -- Loading package common_pkg
+# End time: 16:35:46 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:46 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/alu_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package logger_pkg
+# -- Loading package project_logger_pkg
+# -- Loading package common_pkg
+# -- Compiling entity alu_top_tb
+# -- Compiling architecture test_bench of alu_top_tb
+# -- Loading entity alu_nbits_top
+# End time: 16:35:46 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcom 2020.1_1 Compiler 2020.03 Mar  4 2020
+# Start time: 16:35:46 on Mar 23,2026
+# vcom -2008 -reportprogress 300 -work work ../src_tb/console_sim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity console_sim
+# -- Compiling architecture struct of console_sim
+# -- Loading package NUMERIC_STD
+# -- Loading entity alu_nbits_top
+# End time: 16:35:46 on Mar 23,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" work.alu_top_tb -GVAL_N=6 
+# Start time: 16:35:47 on Mar 23,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.logger_pkg(body)
+# Loading work.project_logger_pkg
+# Loading work.common_pkg(body)
+# Loading work.alu_top_tb(test_bench)#1
+# Loading work.alu_nbits_top(struct)#1
+# Loading work.addn_full(struct)#1
+# Loading work.addn(flot_don)#1
+# Loading work.addn(flot_don)#2
+# 1
+# ** Note: >> [NOTE]    :  @ 1 ns Start of simulation
+#    Time: 1 ns  Iteration: 0  Instance: /alu_top_tb
+# ** Note: >> [NOTE]    :  @ 500466 ns 
+# +--------------------+
+# | FINAL REPORT       |
+# |--------------------+
+# | Nb warnings = 0
+# | Nb errors   = 0
+# |
+# | Verbosity level is : note
+# |
+# | *** VOUS ETES LES MEILLEURS *** 
+# | *** Bravo, pas d'erreurs    *** 
+# | 
+# | END OF SIMULATION
+#    Time: 500466 ns  Iteration: 0  Instance: /alu_top_tb
+run -all
+# End time: 17:00:39 on Mar 23,2026, Elapsed time: 0:24:52
+# Errors: 0, Warnings: 0
