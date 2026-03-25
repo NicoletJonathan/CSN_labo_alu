@@ -1,5 +1,5 @@
 Analysis & Synthesis report for maxv_top
-Mon Mar 23 00:22:41 2026
+Wed Mar 25 09:20:36 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -15,10 +15,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for User Entity Instance: alu_nbits_top:U1
- 11. Parameter Settings for User Entity Instance: alu_nbits_top:U1|addn_full:add_inst
- 12. Parameter Settings for User Entity Instance: alu_nbits_top:U1|addn_full:add_inst|addn:add3
- 13. Parameter Settings for User Entity Instance: alu_nbits_top:U1|addn_full:add_inst|addn:add1
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |alu_nbits_top
+ 11. Parameter Settings for User Entity Instance: addn_full:add_inst
+ 12. Parameter Settings for User Entity Instance: addn_full:add_inst|addn:add3
+ 13. Parameter Settings for User Entity Instance: addn_full:add_inst|addn:add1
  14. Analysis & Synthesis Messages
 
 
@@ -45,13 +45,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Mar 23 00:22:41 2026           ;
+; Analysis & Synthesis Status ; Successful - Wed Mar 25 09:20:36 2026           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name               ; maxv_top                                        ;
-; Top-level Entity Name       ; maxv_top                                        ;
+; Top-level Entity Name       ; alu_nbits_top                                   ;
 ; Family                      ; MAX V                                           ;
-; Total logic elements        ; 71                                              ;
-; Total pins                  ; 159                                             ;
+; Total logic elements        ; 28                                              ;
+; Total pins                  ; 18                                              ;
 ; Total virtual pins          ; 0                                               ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                   ;
 +-----------------------------+-------------------------------------------------+
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 5M570ZF256C5       ;                    ;
-; Top-level entity name                                            ; maxv_top           ; maxv_top           ;
+; Top-level entity name                                            ; alu_nbits_top      ; maxv_top           ;
 ; Family name                                                      ; MAX V              ; Cyclone V          ;
 ; VHDL Show LMF Mapping Messages                                   ; Off                ;                    ;
 ; VHDL Version                                                     ; VHDL_2008          ; VHDL_1993          ;
@@ -150,7 +150,6 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; ../src_cpld/maxv_top.vhd         ; yes             ; User VHDL File  ; /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd ;         ;
 ; ../src/alu_nbits_top.vhd         ; yes             ; User VHDL File  ; /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/alu_nbits_top.vhd ;         ;
 ; ../src/addn_full.vhd             ; yes             ; User VHDL File  ; /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd     ;         ;
 ; ../src/addn.vhd                  ; yes             ; User VHDL File  ; /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd          ;         ;
@@ -162,47 +161,45 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Total logic elements                        ; 71          ;
-;     -- Combinational with no register       ; 51          ;
+; Total logic elements                        ; 28          ;
+;     -- Combinational with no register       ; 28          ;
 ;     -- Register only                        ; 0           ;
-;     -- Combinational with a register        ; 20          ;
+;     -- Combinational with a register        ; 0           ;
 ;                                             ;             ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 24          ;
-;     -- 3 input functions                    ; 24          ;
-;     -- 2 input functions                    ; 21          ;
-;     -- 1 input functions                    ; 2           ;
+;     -- 4 input functions                    ; 14          ;
+;     -- 3 input functions                    ; 11          ;
+;     -- 2 input functions                    ; 2           ;
+;     -- 1 input functions                    ; 1           ;
 ;     -- 0 input functions                    ; 0           ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 45          ;
-;     -- arithmetic mode                      ; 26          ;
+;     -- normal mode                          ; 24          ;
+;     -- arithmetic mode                      ; 4           ;
 ;     -- qfbk mode                            ; 0           ;
 ;     -- register cascade mode                ; 0           ;
 ;     -- synchronous clear/load mode          ; 0           ;
-;     -- asynchronous clear/load mode         ; 20          ;
+;     -- asynchronous clear/load mode         ; 0           ;
 ;                                             ;             ;
-; Total registers                             ; 20          ;
-; Total logic cells in carry chains           ; 28          ;
-; I/O pins                                    ; 159         ;
-; Maximum fan-out node                        ; Switch_i[1] ;
-; Maximum fan-out                             ; 34          ;
-; Total fan-out                               ; 267         ;
-; Average fan-out                             ; 1.16        ;
+; Total registers                             ; 0           ;
+; Total logic cells in carry chains           ; 5           ;
+; I/O pins                                    ; 18          ;
+; Maximum fan-out node                        ; opcode_i[1] ;
+; Maximum fan-out                             ; 18          ;
+; Total fan-out                               ; 101         ;
+; Average fan-out                             ; 2.20        ;
 +---------------------------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                      ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name   ; Library Name ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+---------------+--------------+
-; |maxv_top                  ; 71 (20)     ; 20           ; 0          ; 159  ; 0            ; 51 (0)       ; 0 (0)             ; 20 (20)          ; 28 (19)         ; 0 (0)      ; |maxv_top                                               ; maxv_top      ; work         ;
-;    |alu_nbits_top:U1|      ; 51 (40)     ; 0            ; 0          ; 0    ; 0            ; 51 (40)      ; 0 (0)             ; 0 (0)            ; 9 (0)           ; 0 (0)      ; |maxv_top|alu_nbits_top:U1                              ; alu_nbits_top ; work         ;
-;       |addn_full:add_inst| ; 11 (1)      ; 0            ; 0          ; 0    ; 0            ; 11 (1)       ; 0 (0)             ; 0 (0)            ; 9 (0)           ; 0 (0)      ; |maxv_top|alu_nbits_top:U1|addn_full:add_inst           ; addn_full     ; work         ;
-;          |addn:add1|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |maxv_top|alu_nbits_top:U1|addn_full:add_inst|addn:add1 ; addn          ; work         ;
-;          |addn:add3|       ; 9 (9)       ; 0            ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 9 (9)           ; 0 (0)      ; |maxv_top|alu_nbits_top:U1|addn_full:add_inst|addn:add3 ; addn          ; work         ;
-+----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+---------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                          ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                         ; Entity Name   ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------+---------------+--------------+
+; |alu_nbits_top             ; 28 (22)     ; 0            ; 0          ; 18   ; 0            ; 28 (22)      ; 0 (0)             ; 0 (0)            ; 5 (0)           ; 0 (0)      ; |alu_nbits_top                              ; alu_nbits_top ; work         ;
+;    |addn_full:add_inst|    ; 6 (1)       ; 0            ; 0          ; 0    ; 0            ; 6 (1)        ; 0 (0)             ; 0 (0)            ; 5 (0)           ; 0 (0)      ; |alu_nbits_top|addn_full:add_inst           ; addn_full     ; work         ;
+;       |addn:add3|          ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 5 (5)           ; 0 (0)      ; |alu_nbits_top|addn_full:add_inst|addn:add3 ; addn          ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -211,62 +208,62 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 20    ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
-; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |maxv_top|alu_nbits_top:U1|Mux1 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |alu_nbits_top|Mux1        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu_nbits_top:U1 ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; n              ; 8     ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |alu_nbits_top ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu_nbits_top:U1|addn_full:add_inst ;
-+----------------+-------+---------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                    ;
-+----------------+-------+---------------------------------------------------------+
-; n              ; 8     ; Signed Integer                                          ;
-+----------------+-------+---------------------------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addn_full:add_inst ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; n              ; 4     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu_nbits_top:U1|addn_full:add_inst|addn:add3 ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; n              ; 7     ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addn_full:add_inst|addn:add3 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 3     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu_nbits_top:U1|addn_full:add_inst|addn:add1 ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; n              ; 1     ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: addn_full:add_inst|addn:add1 ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; n              ; 1     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -276,7 +273,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Mon Mar 23 00:22:30 2026
+    Info: Processing started: Wed Mar 25 09:20:06 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off maxv_top -c maxv_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -292,139 +289,18 @@ Info (12021): Found 2 design units, including 1 entities, in source file /home/r
 Info (12021): Found 2 design units, including 1 entities, in source file /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd
     Info (12022): Found design unit 1: addn-flot_don File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd Line: 34
     Info (12023): Found entity 1: addn File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn.vhd Line: 24
-Info (12127): Elaborating entity "maxv_top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at maxv_top.vhd(78): object "Button_s" assigned a value but never read File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 78
-Warning (10873): Using initial value X (don't care) for net "Con_80p_DO_s[79..17]" at maxv_top.vhd(73) File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 73
-Warning (10873): Using initial value X (don't care) for net "Con_80p_DO_s[8..5]" at maxv_top.vhd(73) File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 73
-Info (12129): Elaborating entity "alu_nbits_top" using architecture "A:struct" for hierarchy "alu_nbits_top:U1" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 122
-Info (12128): Elaborating entity "addn_full" for hierarchy "alu_nbits_top:U1|addn_full:add_inst" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/alu_nbits_top.vhd Line: 79
-Info (12128): Elaborating entity "addn" for hierarchy "alu_nbits_top:U1|addn_full:add_inst|addn:add3" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd Line: 54
-Info (12128): Elaborating entity "addn" for hierarchy "alu_nbits_top:U1|addn_full:add_inst|addn:add1" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd Line: 66
-Warning (13039): The following bidirectional pins have no drivers
-    Warning (13040): bidirectional pin "Con_25p_io[1]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[2]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[3]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[4]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[5]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[6]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[7]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[8]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[9]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[10]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[11]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[12]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[13]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[14]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[15]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[16]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[17]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[18]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[19]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[20]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[21]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[22]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[23]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[24]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Con_25p_io[25]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 47
-    Warning (13040): bidirectional pin "Mezzanine_io[5]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[6]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[7]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[8]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[9]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[10]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[11]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[12]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[13]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[14]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[15]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[16]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[17]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[18]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[19]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-    Warning (13040): bidirectional pin "Mezzanine_io[20]" has no driver File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 49
-Warning (13032): The following tri-state nodes are fed by constants
-    Warning (13033): The pin "Con_80p_io[5]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[6]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[7]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[8]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[17]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[18]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[19]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[20]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[21]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[22]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[23]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[24]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[25]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[26]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[27]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[28]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[29]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[30]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[31]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[32]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[33]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[34]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[35]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[36]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[37]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[38]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[39]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13033): The pin "Con_80p_io[40]" is fed by GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-Warning (13009): TRI or OPNDRN buffers permanently enabled
-    Warning (13010): Node "Con_80p_io[2]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[3]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[4]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[9]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[10]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[11]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[12]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[13]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[14]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[15]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-    Warning (13010): Node "Con_80p_io[16]~synth" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 48
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "nLed_o[3]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 57
-    Warning (13410): Pin "nLed_o[4]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 57
-    Warning (13410): Pin "nLed_o[5]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 57
-    Warning (13410): Pin "nLed_o[6]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 57
-    Warning (13410): Pin "nLed_o[7]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 57
-    Warning (13410): Pin "Led_RGB_o[0]" is stuck at GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 58
-    Warning (13410): Pin "Led_RGB_o[1]" is stuck at GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 58
-    Warning (13410): Pin "Led_RGB_o[2]" is stuck at GND File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 58
-    Warning (13410): Pin "nSeven_Seg_o[0]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-    Warning (13410): Pin "nSeven_Seg_o[1]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-    Warning (13410): Pin "nSeven_Seg_o[2]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-    Warning (13410): Pin "nSeven_Seg_o[3]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-    Warning (13410): Pin "nSeven_Seg_o[4]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-    Warning (13410): Pin "nSeven_Seg_o[5]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-    Warning (13410): Pin "nSeven_Seg_o[6]" is stuck at VCC File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 59
-Warning (21074): Design contains 16 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "Clk_Gen_i" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 44
-    Warning (15610): No output dependent on input pin "Encoder_A_i" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 51
-    Warning (15610): No output dependent on input pin "Encoder_B_i" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 52
-    Warning (15610): No output dependent on input pin "nButton_i[1]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[2]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[3]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[4]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[5]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[6]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[7]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "nButton_i[8]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 53
-    Warning (15610): No output dependent on input pin "Switch_i[3]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 55
-    Warning (15610): No output dependent on input pin "Switch_i[4]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 55
-    Warning (15610): No output dependent on input pin "Switch_i[5]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 55
-    Warning (15610): No output dependent on input pin "Switch_i[6]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 55
-    Warning (15610): No output dependent on input pin "Switch_i[7]" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src_cpld/maxv_top.vhd Line: 55
-Info (21057): Implemented 230 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 21 input pins
-    Info (21059): Implemented 19 output pins
-    Info (21060): Implemented 119 bidirectional pins
-    Info (21061): Implemented 71 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 120 warnings
-    Info: Peak virtual memory: 916 megabytes
-    Info: Processing ended: Mon Mar 23 00:22:41 2026
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:10
+Info (12127): Elaborating entity "alu_nbits_top" for the top level hierarchy
+Info (12128): Elaborating entity "addn_full" for hierarchy "addn_full:add_inst" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/alu_nbits_top.vhd Line: 79
+Info (12128): Elaborating entity "addn" for hierarchy "addn_full:add_inst|addn:add3" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd Line: 54
+Info (12128): Elaborating entity "addn" for hierarchy "addn_full:add_inst|addn:add1" File: /home/reds/Desktop/CSN/labo3/CSN_labo_alu/alu_nbits/src/addn_full.vhd Line: 66
+Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 11 input pins
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 28 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 927 megabytes
+    Info: Processing ended: Wed Mar 25 09:20:36 2026
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:18
 
 

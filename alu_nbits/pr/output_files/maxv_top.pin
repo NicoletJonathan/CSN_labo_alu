@@ -63,73 +63,73 @@ CHIP  "maxv_top"  ASSIGNED TO AN: 5M570ZF256C5
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
-Con_80p_io[41]               : A2        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : A2        :        :                   :         : 2         :                
 VCCIO2                       : A3        : power  :                   : 3.3V    : 2         :                
-Con_80p_io[2]                : A4        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[4]                : A5        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[6]                : A6        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[48]               : A7        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[9]                : A8        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[10]               : A9        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[52]               : A10       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[53]               : A11       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[55]               : A12       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[57]               : A13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : A4        :        :                   :         : 2         :                
+GND*                         : A5        :        :                   :         : 2         :                
+GND*                         : A6        :        :                   :         : 2         :                
+GND*                         : A7        :        :                   :         : 2         :                
+GND*                         : A8        :        :                   :         : 2         :                
+GND*                         : A9        :        :                   :         : 2         :                
+GND*                         : A10       :        :                   :         : 2         :                
+GND*                         : A11       :        :                   :         : 2         :                
+GND*                         : A12       :        :                   :         : 2         :                
+GND*                         : A13       :        :                   :         : 2         :                
 VCCIO2                       : A14       : power  :                   : 3.3V    : 2         :                
-Con_80p_io[60]               : A15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+result_o[3]                  : A15       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : A16       : gnd    :                   :         :           :                
-Con_25p_io[23]               : B1        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : B1        :        :                   :         : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
-Con_80p_io[42]               : B3        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[3]                : B4        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[5]                : B5        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[7]                : B6        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : B3        :        :                   :         : 2         :                
+GND*                         : B4        :        :                   :         : 2         :                
+GND*                         : B5        :        :                   :         : 2         :                
+GND*                         : B6        :        :                   :         : 2         :                
 GND                          : B7        : gnd    :                   :         :           :                
-Con_80p_io[49]               : B8        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[11]               : B9        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[12]               : B10       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[54]               : B11       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[56]               : B12       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[58]               : B13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[19]               : B14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : B8        :        :                   :         : 2         :                
+GND*                         : B9        :        :                   :         : 2         :                
+GND*                         : B10       :        :                   :         : 2         :                
+GND*                         : B11       :        :                   :         : 2         :                
+GND*                         : B12       :        :                   :         : 2         :                
+na_i[0]                      : B13       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : B14       :        :                   :         : 2         :                
 GND                          : B15       : gnd    :                   :         :           :                
-Con_80p_io[21]               : B16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : B16       :        :                   :         : 2         :                
 VCCIO1                       : C1        : power  :                   : 3.3V    : 1         :                
-Led_RGB_o[0]                 : C2        : output : 3.3-V LVTTL       :         : 1         : Y              
-Led_RGB_o[1]                 : C3        : output : 3.3-V LVTTL       :         : 1         : Y              
-Con_80p_io[43]               : C4        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[45]               : C5        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[47]               : C6        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[8]                : C7        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[50]               : C8        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[51]               : C9        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[13]               : C10       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[14]               : C11       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[16]               : C12       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[18]               : C13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[59]               : C14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[20]               : C15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : C2        :        :                   :         : 1         :                
+GND*                         : C3        :        :                   :         : 1         :                
+GND*                         : C4        :        :                   :         : 2         :                
+GND*                         : C5        :        :                   :         : 2         :                
+GND*                         : C6        :        :                   :         : 2         :                
+GND*                         : C7        :        :                   :         : 2         :                
+GND*                         : C8        :        :                   :         : 2         :                
+GND*                         : C9        :        :                   :         : 2         :                
+GND*                         : C10       :        :                   :         : 2         :                
+GND*                         : C11       :        :                   :         : 2         :                
+GND*                         : C12       :        :                   :         : 2         :                
+dep_nsgn_o                   : C13       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C14       :        :                   :         : 2         :                
+GND*                         : C15       :        :                   :         : 2         :                
 VCCIO2                       : C16       : power  :                   : 3.3V    : 2         :                
-Led_RGB_o[2]                 : D1        : output : 3.3-V LVTTL       :         : 1         : Y              
-nButton_i[1]                 : D2        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nButton_i[2]                 : D3        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Con_80p_io[44]               : D4        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[46]               : D5        : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : D1        :        :                   :         : 1         :                
+GND*                         : D2        :        :                   :         : 1         :                
+GND*                         : D3        :        :                   :         : 1         :                
+GND*                         : D4        :        :                   :         : 2         :                
+GND*                         : D5        :        :                   :         : 2         :                
 NC                           : D6        :        :                   :         :           :                
 NC                           : D7        :        :                   :         :           :                
 NC                           : D8        :        :                   :         :           :                
 NC                           : D9        :        :                   :         :           :                
 NC                           : D10       :        :                   :         :           :                
-Con_80p_io[15]               : D11       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[17]               : D12       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[23]               : D13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[22]               : D14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[62]               : D15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[61]               : D16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-nButton_i[3]                 : E1        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nButton_i[4]                 : E2        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nButton_i[5]                 : E3        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nButton_i[6]                 : E4        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : D11       :        :                   :         : 2         :                
+nb_i[3]                      : D12       : input  : 3.3-V LVTTL       :         : 2         : N              
+z_o                          : D13       : output : 3.3-V LVTTL       :         : 2         : N              
+result_o[1]                  : D14       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : D15       :        :                   :         : 2         :                
+result_o[2]                  : D16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : E1        :        :                   :         : 1         :                
+GND*                         : E2        :        :                   :         : 1         :                
+GND*                         : E3        :        :                   :         : 1         :                
+GND*                         : E4        :        :                   :         : 1         :                
 NC                           : E5        :        :                   :         :           :                
 NC                           : E6        :        :                   :         :           :                
 NC                           : E7        :        :                   :         :           :                
@@ -138,13 +138,13 @@ NC                           : E9        :        :                   :         
 NC                           : E10       :        :                   :         :           :                
 NC                           : E11       :        :                   :         :           :                
 NC                           : E12       :        :                   :         :           :                
-Con_80p_io[25]               : E13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[24]               : E14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[64]               : E15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[63]               : E16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-nButton_i[7]                 : F1        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nButton_i[8]                 : F2        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nLed_o[7]                    : F3        : output : 3.3-V LVTTL       :         : 1         : Y              
+na_i[3]                      : E13       : input  : 3.3-V LVTTL       :         : 2         : N              
+opcode_i[2]                  : E14       : input  : 3.3-V LVTTL       :         : 2         : N              
+dep_sgn_o                    : E15       : output : 3.3-V LVTTL       :         : 2         : N              
+opcode_i[1]                  : E16       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : F1        :        :                   :         : 1         :                
+GND*                         : F2        :        :                   :         : 1         :                
+GND*                         : F3        :        :                   :         : 1         :                
 NC                           : F4        :        :                   :         :           :                
 NC                           : F5        :        :                   :         :           :                
 NC                           : F6        :        :                   :         :           :                
@@ -154,13 +154,13 @@ VCCIO2                       : F9        : power  :                   : 3.3V    
 NC                           : F10       :        :                   :         :           :                
 NC                           : F11       :        :                   :         :           :                
 NC                           : F12       :        :                   :         :           :                
-Con_80p_io[27]               : F13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[26]               : F14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[66]               : F15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[65]               : F16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-nLed_o[6]                    : G1        : output : 3.3-V LVTTL       :         : 1         : Y              
-nLed_o[5]                    : G2        : output : 3.3-V LVTTL       :         : 1         : Y              
-nLed_o[4]                    : G3        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : F13       :        :                   :         : 2         :                
+na_i[2]                      : F14       : input  : 3.3-V LVTTL       :         : 2         : N              
+opcode_i[0]                  : F15       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : F16       :        :                   :         : 2         :                
+GND*                         : G1        :        :                   :         : 1         :                
+GND*                         : G2        :        :                   :         : 1         :                
+GND*                         : G3        :        :                   :         : 1         :                
 NC                           : G4        :        :                   :         :           :                
 NC                           : G5        :        :                   :         :           :                
 NC                           : G6        :        :                   :         :           :                
@@ -171,44 +171,44 @@ GND                          : G10       : gnd    :                   :         
 NC                           : G11       :        :                   :         :           :                
 NC                           : G12       :        :                   :         :           :                
 NC                           : G13       :        :                   :         :           :                
-Con_80p_io[28]               : G14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[68]               : G15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[67]               : G16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-nLed_o[3]                    : H1        : output : 3.3-V LVTTL       :         : 1         : Y              
-nLed_o[2]                    : H2        : output : 3.3-V LVTTL       :         : 1         : Y              
-nLed_o[1]                    : H3        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : G14       :        :                   :         : 2         :                
+result_o[0]                  : G15       : output : 3.3-V LVTTL       :         : 2         : N              
+nb_i[2]                      : G16       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : H1        :        :                   :         : 1         :                
+GND*                         : H2        :        :                   :         : 1         :                
+GND*                         : H3        :        :                   :         : 1         :                
 NC                           : H4        :        :                   :         :           :                
-Clk_Main_i                   : H5        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : H5        :        :                   :         : 1         :                
 VCCIO1                       : H6        : power  :                   : 3.3V    : 1         :                
 GND                          : H7        : gnd    :                   :         :           :                
 VCCINT                       : H8        : power  :                   : 1.8V    :           :                
 GND                          : H9        : gnd    :                   :         :           :                
 VCCINT                       : H10       : power  :                   : 1.8V    :           :                
 VCCIO2                       : H11       : power  :                   : 3.3V    : 2         :                
-Con_80p_io[30]               : H12       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : H12       :        :                   :         : 2         :                
 NC                           : H13       :        :                   :         :           :                
-Con_80p_io[70]               : H14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[69]               : H15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[29]               : H16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-nLed_o[0]                    : J1        : output : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[21]               : J2        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Switch_i[6]                  : J3        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : H14       :        :                   :         : 2         :                
+nb_i[0]                      : H15       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : H16       :        :                   :         : 2         :                
+GND*                         : J1        :        :                   :         : 1         :                
+GND*                         : J2        :        :                   :         : 1         :                
+GND*                         : J3        :        :                   :         : 1         :                
 NC                           : J4        :        :                   :         :           :                
-Clk_Gen_i                    : J5        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : J5        :        :                   :         : 1         :                
 VCCIO1                       : J6        : power  :                   : 3.3V    : 1         :                
 VCCINT                       : J7        : power  :                   : 1.8V    :           :                
 GND                          : J8        : gnd    :                   :         :           :                
 VCCINT                       : J9        : power  :                   : 1.8V    :           :                
 GND                          : J10       : gnd    :                   :         :           :                
 VCCIO2                       : J11       : power  :                   : 3.3V    : 2         :                
-Con_80p_io[32]               : J12       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : J12       :        :                   :         : 2         :                
 NC                           : J13       :        :                   :         :           :                
-Con_80p_io[72]               : J14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[71]               : J15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[31]               : J16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Switch_i[5]                  : K1        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Switch_i[4]                  : K2        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Switch_i[3]                  : K3        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : J14       :        :                   :         : 2         :                
+GND*                         : J15       :        :                   :         : 2         :                
+GND*                         : J16       :        :                   :         : 2         :                
+GND*                         : K1        :        :                   :         : 1         :                
+GND*                         : K2        :        :                   :         : 1         :                
+GND*                         : K3        :        :                   :         : 1         :                
 NC                           : K4        :        :                   :         :           :                
 NC                           : K5        :        :                   :         :           :                
 NC                           : K6        :        :                   :         :           :                
@@ -219,13 +219,13 @@ GND                          : K10       : gnd    :                   :         
 NC                           : K11       :        :                   :         :           :                
 NC                           : K12       :        :                   :         :           :                
 NC                           : K13       :        :                   :         :           :                
-Con_80p_io[74]               : K14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[73]               : K15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[33]               : K16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Switch_i[2]                  : L1        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Switch_i[1]                  : L2        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Switch_i[0]                  : L3        : input  : 3.3-V LVTTL       :         : 1         : Y              
-Encoder_A_i                  : L4        : input  : 3.3-V LVTTL       :         : 1         : Y              
+nb_i[1]                      : K14       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : K15       :        :                   :         : 2         :                
+GND*                         : K16       :        :                   :         : 2         :                
+GND*                         : L1        :        :                   :         : 1         :                
+GND*                         : L2        :        :                   :         : 1         :                
+GND*                         : L3        :        :                   :         : 1         :                
+GND*                         : L4        :        :                   :         : 1         :                
 NC                           : L5        :        :                   :         :           :                
 TDI                          : L6        : input  :                   :         : 1         :                
 NC                           : L7        :        :                   :         :           :                
@@ -234,87 +234,87 @@ VCCIO1                       : L9        : power  :                   : 3.3V    
 NC                           : L10       :        :                   :         :           :                
 NC                           : L11       :        :                   :         :           :                
 NC                           : L12       :        :                   :         :           :                
-Con_80p_io[76]               : L13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[75]               : L14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[35]               : L15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[34]               : L16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Encoder_B_i                  : M1        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nSeven_Seg_o[1]              : M2        : output : 3.3-V LVTTL       :         : 1         : Y              
-nSeven_Seg_o[0]              : M3        : output : 3.3-V LVTTL       :         : 1         : Y              
-nSeven_Seg_o[5]              : M4        : output : 3.3-V LVTTL       :         : 1         : Y              
+na_i[1]                      : L13       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : L14       :        :                   :         : 2         :                
+GND*                         : L15       :        :                   :         : 2         :                
+GND*                         : L16       :        :                   :         : 2         :                
+GND*                         : M1        :        :                   :         : 1         :                
+GND*                         : M2        :        :                   :         : 1         :                
+GND*                         : M3        :        :                   :         : 1         :                
+GND*                         : M4        :        :                   :         : 1         :                
 TDO                          : M5        : output :                   :         : 1         :                
 NC                           : M6        :        :                   :         :           :                
 NC                           : M7        :        :                   :         :           :                
-Switch_i[7]                  : M8        : input  : 3.3-V LVTTL       :         : 1         : Y              
-nReset_i                     : M9        : input  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : M8        :        :                   :         : 1         :                
+GND*                         : M9        :        :                   :         : 1         :                
 NC                           : M10       :        :                   :         :           :                
 NC                           : M11       :        :                   :         :           :                
 NC                           : M12       :        :                   :         :           :                
-Con_80p_io[78]               : M13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[77]               : M14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[37]               : M15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[36]               : M16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-nSeven_Seg_o[6]              : N1        : output : 3.3-V LVTTL       :         : 1         : Y              
-nSeven_Seg_o[4]              : N2        : output : 3.3-V LVTTL       :         : 1         : Y              
-nSeven_Seg_o[3]              : N3        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : M13       :        :                   :         : 2         :                
+GND*                         : M14       :        :                   :         : 2         :                
+GND*                         : M15       :        :                   :         : 2         :                
+GND*                         : M16       :        :                   :         : 2         :                
+GND*                         : N1        :        :                   :         : 1         :                
+GND*                         : N2        :        :                   :         : 1         :                
+GND*                         : N3        :        :                   :         : 1         :                
 TMS                          : N4        : input  :                   :         : 1         :                
-Mezzanine_io[19]             : N5        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : N5        :        :                   :         : 1         :                
 NC                           : N6        :        :                   :         :           :                
 NC                           : N7        :        :                   :         :           :                
 NC                           : N8        :        :                   :         :           :                
 NC                           : N9        :        :                   :         :           :                
 NC                           : N10       :        :                   :         :           :                
 NC                           : N11       :        :                   :         :           :                
-Con_25p_io[16]               : N12       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_80p_io[40]               : N13       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[79]               : N14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[39]               : N15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Con_80p_io[38]               : N16       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : N12       :        :                   :         : 1         :                
+GND*                         : N13       :        :                   :         : 2         :                
+GND*                         : N14       :        :                   :         : 2         :                
+GND*                         : N15       :        :                   :         : 2         :                
+GND*                         : N16       :        :                   :         : 2         :                
 VCCIO1                       : P1        : power  :                   : 3.3V    : 1         :                
-nSeven_Seg_o[2]              : P2        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : P2        :        :                   :         : 1         :                
 TCK                          : P3        : input  :                   :         : 1         :                
-Mezzanine_io[16]             : P4        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[17]             : P5        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[11]             : P6        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[12]               : P7        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[10]               : P8        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[8]                : P9        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[19]               : P10       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[5]                : P11       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[3]                : P12       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[14]               : P13       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[8]              : P14       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
-Mezzanine_io[5]              : P15       : bidir  : 3.3-V LVTTL       :         : 2         : Y              
+GND*                         : P4        :        :                   :         : 1         :                
+GND*                         : P5        :        :                   :         : 1         :                
+GND*                         : P6        :        :                   :         : 1         :                
+GND*                         : P7        :        :                   :         : 1         :                
+GND*                         : P8        :        :                   :         : 1         :                
+GND*                         : P9        :        :                   :         : 1         :                
+GND*                         : P10       :        :                   :         : 1         :                
+GND*                         : P11       :        :                   :         : 1         :                
+GND*                         : P12       :        :                   :         : 1         :                
+GND*                         : P13       :        :                   :         : 1         :                
+GND*                         : P14       :        :                   :         : 2         :                
+GND*                         : P15       :        :                   :         : 2         :                
 VCCIO2                       : P16       : power  :                   : 3.3V    : 2         :                
-nSeven_Seg_o[7]              : R1        : output : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : R1        :        :                   :         : 1         :                
 GND                          : R2        : gnd    :                   :         :           :                
-Mezzanine_io[14]             : R3        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[18]             : R4        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[15]             : R5        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[13]               : R6        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[24]               : R7        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[22]               : R8        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[20]               : R9        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[6]                : R10       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[17]               : R11       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[15]               : R12       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[1]                : R13       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[10]             : R14       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : R3        :        :                   :         : 1         :                
+GND*                         : R4        :        :                   :         : 1         :                
+GND*                         : R5        :        :                   :         : 1         :                
+GND*                         : R6        :        :                   :         : 1         :                
+GND*                         : R7        :        :                   :         : 1         :                
+GND*                         : R8        :        :                   :         : 1         :                
+GND*                         : R9        :        :                   :         : 1         :                
+GND*                         : R10       :        :                   :         : 1         :                
+GND*                         : R11       :        :                   :         : 1         :                
+GND*                         : R12       :        :                   :         : 1         :                
+GND*                         : R13       :        :                   :         : 1         :                
+GND*                         : R14       :        :                   :         : 1         :                
 GND                          : R15       : gnd    :                   :         :           :                
-Mezzanine_io[7]              : R16       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : R16       :        :                   :         : 1         :                
 GND                          : T1        : gnd    :                   :         :           :                
-Mezzanine_io[12]             : T2        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : T2        :        :                   :         : 1         :                
 VCCIO1                       : T3        : power  :                   : 3.3V    : 1         :                
-Mezzanine_io[20]             : T4        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[13]             : T5        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[25]               : T6        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[11]               : T7        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[9]                : T8        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[7]                : T9        : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[18]               : T10       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[4]                : T11       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Con_25p_io[2]                : T12       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
-Mezzanine_io[6]              : T13       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : T4        :        :                   :         : 1         :                
+GND*                         : T5        :        :                   :         : 1         :                
+GND*                         : T6        :        :                   :         : 1         :                
+GND*                         : T7        :        :                   :         : 1         :                
+GND*                         : T8        :        :                   :         : 1         :                
+GND*                         : T9        :        :                   :         : 1         :                
+GND*                         : T10       :        :                   :         : 1         :                
+GND*                         : T11       :        :                   :         : 1         :                
+GND*                         : T12       :        :                   :         : 1         :                
+GND*                         : T13       :        :                   :         : 1         :                
 VCCIO1                       : T14       : power  :                   : 3.3V    : 1         :                
-Mezzanine_io[9]              : T15       : bidir  : 3.3-V LVTTL       :         : 1         : Y              
+GND*                         : T15       :        :                   :         : 1         :                
 GND                          : T16       : gnd    :                   :         :           :                

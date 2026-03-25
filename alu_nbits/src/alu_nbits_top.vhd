@@ -59,17 +59,17 @@ architecture struct of alu_nbits_top is
   signal ovr_s  : std_logic;
   
   -- Resultat de portes sur 1bit à étendre sur N bits
-  signal x1_1bit_s : std_logic;
-  signal x2_1bit_s : std_logic;
+  signal op1_nand_not_op0_s : std_logic;
+  signal op0_and_not_op1_and_op2_s : std_logic;
   
   -- Bit2 de l'op code étendu sur N bits
   signal op2_Nbits_s : std_logic_vector(N-1 downto 0);
   
   -- na_i et "nb_i xor op2_Nbits_s" séléctioné en fonction op2
-  signal mux_inter_s : std_logic_vector(N-1 downto 0);
+  signal mux_mult_ou_soustr_s : std_logic_vector(N-1 downto 0);
   
   -- stock le resultat de "nb_i xor op2_Nbits_s" qui est utilié plusieurs fois
-  signal res_xor1_s : std_logic_vector(N-1 downto 0);
+  signal nb_xor_op2Nbits_s : std_logic_vector(N-1 downto 0);
 
 -- Component Declaration
 
@@ -96,8 +96,8 @@ begin
   
   -- Operande 1
   
-  x1_1bit_s <= op1_s nand not(op0_s);
-  val1_s <= na_i and (val1_s'range => x1_1bit_s);
+  op1_nand_not_op0_s <= op1_s nand not(op0_s);
+  val1_s <= na_i and (val1_s'range => op1_nand_not_op0_s);
 
   -- Operande 2
   
@@ -105,21 +105,21 @@ begin
   
   op2_Nbits_s <= (val2_s'range => op2_s);
   
-  res_xor1_s <= nb_i xor op2_Nbits_s;
+  nb_xor_op2Nbits_s <= nb_i xor op2_Nbits_s;
   
   -- choix entre na_i et "nb_i xor op2_Nbits_s" en fonction op2
   
   with op2_s select
-   mux_inter_s <= na_i	     		when '0',
-				  res_xor1_s 		when '1',
-				  (others =>'0')    when others;
+   mux_mult_ou_soustr_s <= na_i	when '0',
+				  nb_xor_op2Nbits_s 	when '1',
+				  (others =>'0')  	when others;
   
  with opcode_i(1 downto 0) select
-  val2_s <= res_xor1_s      					  					when "00",
-			mux_inter_s											  	when "01",
-            ((na_i xor op2_Nbits_s) and res_xor1_s) xor op2_Nbits_s	when "10",
-			std_logic_vector(to_unsigned(1, N)) xor op2_Nbits_s    	when "11",
-			(others =>'0')											when others;
+  val2_s <= nb_xor_op2Nbits_s      					  									when "00",
+				mux_mult_ou_soustr_s											 				when "01",
+            ((na_i xor op2_Nbits_s) and nb_xor_op2Nbits_s) xor op2_Nbits_s	when "10",
+				std_logic_vector(to_unsigned(1, N)) xor op2_Nbits_s    			when "11",
+				(others =>'0')																	when others;
   
   -- connection à l'additionneur
   
@@ -129,9 +129,9 @@ begin
   
   dep_nsgn_o <= cout_s xor (op2_s and (op1_s xnor op0_s));
   
-  x2_1bit_s <= op0_s and not(op1_s) and op2_s;
+  op0_and_not_op1_and_op2_s <= op0_s and not(op1_s) and op2_s;
   
-  result_s <= res_add_s xor (res_add_s'range => x2_1bit_s);
+  result_s <= res_add_s xor (res_add_s'range => op0_and_not_op1_and_op2_s);
   
   -- test résultat nul
   
